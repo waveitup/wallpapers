@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Wallpapers</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        h2 {
+            padding: 20px;
+            width: 100vw;
+            background-color: #0e60fb;
+            color: white;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2em 0;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto, minmax(300px, 1fr));
+            gap: 1em;
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .wallpaper {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .wallpaper img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .download {
+            display: flex;
+            justify-content: right;
+            gap: 8px;
+        }
+
+        .download .view-btn {
+            padding: 8px 15px;
+            border-radius: 50px;
+            border: none;
+            background-color: red;
+            color: white;
+        }
+
+        .download .view-btn:hover {
+            cursor: pointer;
+        }
+
+        .download .view-btn:active {
+            background-color: #ff0000a4;
+        }
+
+        .download .download-btn {
+            padding: 8px 15px;
+            border-radius: 50px;
+            border: none;
+            background-color: #0e60fb;
+            color: white;
+        }
+
+        .download .download-btn:hover {
+            cursor: pointer;
+        }
+
+        .download .download-btn:active {
+            background-color: #0e61fbbb;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Mobile Wallpapers</h2>
+    </header>
+
+    <main>
+        <div class="gallery">
+            <div class="wallpaper">
+                <img src="imgs/wal1.jpg" alt="Wallpaper 1">
+            </div>
+            <div class="download">
+                <a href="imgs/wal1.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal1.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+
+            <div class="wallpaper">
+                <img src="imgs/wal2.jpg" alt="Wallpaper 2">
+            </div>
+            <div class="download">
+                <a href="imgs/wal2.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal2.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+          
+            <div class="wallpaper">
+                <img src="imgs/wal3.jpg" alt="Wallpaper 3">
+            </div>
+            <div class="download">
+                <a href="imgs/wal3.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal3.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+            
+            <div class="wallpaper">
+                <img src="imgs/wal4.jpg" alt="Wallpaper 4">
+            </div>
+            <div class="download">
+                <a href="imgs/wal4.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal4.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+            
+            <div class="wallpaper">
+                <img src="imgs/wal5.jpg" alt="Wallpaper 5">
+            </div>
+            <div class="download">
+                <a href="imgs/wal5.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal5.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+            
+            <div class="wallpaper">
+                <img src="imgs/wal6.jpg" alt="Wallpaper 6">
+            </div>
+            <div class="download">
+                <a href="imgs/wal6.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal6.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+           
+            <div class="wallpaper">
+                <img src="imgs/wal7.jpg" alt="Wallpaper 7">
+            </div>
+            <div class="download">
+                <a href="imgs/wal7.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal7.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+            
+            <div class="wallpaper">
+                <img src="imgs/wal8.jpg" alt="Wallpaper 8">
+            </div>
+            <div class="download">
+                <a href="imgs/wal8.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal8.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+            
+            <div class="wallpaper">
+                <img src="imgs/wal9.jpg" alt="Wallpaper 9">
+            </div>
+            <div class="download">
+                <a href="imgs/wal9.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal9.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+            
+            <div class="wallpaper">
+                <img src="imgs/wal10.jpg" alt="Wallpaper 10">
+            </div>
+            <div class="download">
+                <a href="imgs/wal10.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal10.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+           
+            <div class="wallpaper">
+                <img src="imgs/wal11.jpg" alt="Wallpaper 11">
+            </div>
+            <div class="download">
+                <a href="imgs/wal11.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal11.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+            
+            <div class="wallpaper">
+                <img src="imgs/wal12.jpg" alt="Wallpaper 12">
+            </div>
+            <div class="download">
+                <a href="imgs/wal12.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal12.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+
+            <div class="wallpaper">
+                <img src="imgs/wal13.jpg" alt="Wallpaper 12">
+            </div>
+            <div class="download">
+                <a href="imgs/wal13.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal13.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+
+            <div class="wallpaper">
+                <img src="imgs/wal14.jpg" alt="Wallpaper 12">
+            </div>
+            <div class="download">
+                <a href="imgs/wal14.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal14.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+
+            <div class="wallpaper">
+                <img src="imgs/wal15.jpg" alt="Wallpaper 12">
+            </div>
+            <div class="download">
+                <a href="imgs/wal15.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal15.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+
+            <div class="wallpaper">
+                <img src="imgs/wal16.jpg" alt="Wallpaper 12">
+            </div>
+            <div class="download">
+                <a href="imgs/wal16.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal16.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+
+            <div class="wallpaper">
+                <img src="imgs/wal17.jpg" alt="Wallpaper 12">
+            </div>
+            <div class="download">
+                <a href="imgs/wal17.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal17.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+
+            <div class="wallpaper">
+                <img src="imgs/wal18.jpg" alt="Wallpaper 12">
+            </div>
+            <div class="download">
+                <a href="imgs/wal18.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal18.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+
+            <div class="wallpaper">
+                <img src="imgs/wal19.jpg" alt="Wallpaper 12">
+            </div>
+            <div class="download">
+                <a href="imgs/wal19.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal19.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+
+            <div class="wallpaper">
+                <img src="imgs/wal20.jpg" alt="Wallpaper 12">
+            </div>
+            <div class="download">
+                <a href="imgs/wal20.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal20.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+
+            <div class="wallpaper">
+                <img src="imgs/wal21.jpg" alt="Wallpaper 12">
+            </div>
+            <div class="download">
+                <a href="imgs/wal21.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal21.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+
+            <div class="wallpaper">
+                <img src="imgs/wal22.jpg" alt="Wallpaper 12">
+            </div>
+            <div class="download">
+                <a href="imgs/wal22.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal22.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+
+            <div class="wallpaper">
+                <img src="imgs/wal23.jpg" alt="Wallpaper 12">
+            </div>
+            <div class="download">
+                <a href="imgs/wal23.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal23.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+
+            <div class="wallpaper">
+                <img src="imgs/wal24.jpg" alt="Wallpaper 12">
+            </div>
+            <div class="download">
+                <a href="imgs/wal24.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal24.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+
+            <div class="wallpaper">
+                <img src="imgs/wal25.jpg" alt="Wallpaper 12">
+            </div>
+            <div class="download">
+                <a href="imgs/wal25.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal25.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+
+            <div class="wallpaper">
+                <img src="imgs/wal26.jpg" alt="Wallpaper 12">
+            </div>
+            <div class="download">
+                <a href="imgs/wal26.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal26.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+
+            <div class="wallpaper">
+                <img src="imgs/wal27.jpg" alt="Wallpaper 12">
+            </div>
+            <div class="download">
+                <a href="imgs/wal27.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal27.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+
+            <div class="wallpaper">
+                <img src="imgs/wal28.jpg" alt="Wallpaper 12">
+            </div>
+            <div class="download">
+                <a href="imgs/wal28.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal28.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+
+            <div class="wallpaper">
+                <img src="imgs/wal29.jpg" alt="Wallpaper 12">
+            </div>
+            <div class="download">
+                <a href="imgs/wal29.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal29.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+
+            <div class="wallpaper">
+                <img src="imgs/wal30.jpg" alt="Wallpaper 12">
+            </div>
+            <div class="download">
+                <a href="imgs/wal30.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal30.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+
+            <div class="wallpaper">
+                <img src="imgs/wal31.jpg" alt="Wallpaper 12">
+            </div>
+            <div class="download">
+                <a href="imgs/wal31.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal31.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+
+            <div class="wallpaper">
+                <img src="imgs/wal32.jpg" alt="Wallpaper 12">
+            </div>
+            <div class="download">
+                <a href="imgs/wal32.jpg"><button class="view-btn">View</button></a>
+                <a href="imgs/wal32.jpg" download><button class="download-btn">Download</button></a>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Waveitup Walls. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

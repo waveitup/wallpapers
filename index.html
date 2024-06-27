@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallpapers</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: rgb(241, 241, 241);
+        }
+
+        .container {
+            margin-top: 74vh;
+        }
+
+        .selections {
+            display: flex;
+            justify-content: center;
+            gap: 42px;
+            margin: 40px 50px;
+        }
+
+        .selections ul {
+            display: flex;
+            justify-content: center;
+            border: 2px solid white;
+            background-color: white;
+            margin: -12px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            cursor: default;
+        }
+
+        .selections ul:hover {
+            border: 2px solid #0e60fb;
+        }
+
+        .continue-btn {
+            display: flex;
+            justify-content: center;
+        }
+
+        .continue-btn a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .continue-btn p {
+            font-size: 15px;
+            padding: 10px 112px;
+            border-radius: 8px;
+            border: none;
+            background-color: #0e60fb;
+            color: white;
+            cursor: pointer;
+        }
+
+        .continue-btn p:active {
+            background-color: #4083ff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <li class="selections">
+            <ul>Mobile Wallpapers</ul>
+            <ul>Desktop Wallpapers</ul>
+        </li>
+        <div class="continue-btn">
+            <a href="mobile.html">
+                <p>Continue</p>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>
